@@ -1,4 +1,4 @@
-# 🩺 Blood Pressure Prediction
+# Blood Pressure Prediction
 
 [![tests](https://github.com/aditeayahh/Blood-Pressure-Prediction-Model/actions/workflows/tests.yml/badge.svg)](https://github.com/aditeayahh/Blood-Pressure-Prediction-Model/actions/workflows/tests.yml)
 ![Python](https://img.shields.io/badge/python-3.13-blue)
