@@ -32,7 +32,7 @@ Hypertension affects over a billion people and often has no symptoms until it ca
 | Baseline (always "no") | 0.500 | 65.7% |
 | Logistic regression | 0.695 | 68.5% |
 | Random forest | 0.696 | 68.8% |
-| **Gradient boosting** ⭐ | **0.699** | **68.8%** |
+| **Gradient boosting** | **0.699** | **68.8%** |
 
 ### Systolic blood pressure (regression)
 
