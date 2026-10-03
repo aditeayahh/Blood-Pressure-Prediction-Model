@@ -99,4 +99,5 @@ python -m bp_model.train      # retrain (needs the dataset, see data/README.md)
 
 ---
 
- *Educational project. Not medical advice. Please measure your blood pressure and talk to a doctor.*
+ * This is an Educational project. Not medical advice. Please measure your blood pressure and talk to a doctor.*
+
