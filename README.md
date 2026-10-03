@@ -6,6 +6,8 @@
 ![Streamlit](https://img.shields.io/badge/app-Streamlit-ff4b4b)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
+**▶ [Try the live app](https://bp-predictor-aditya.streamlit.app/)**
+
 An end-to-end machine learning project that estimates **systolic blood pressure** and the **risk of stage 2 hypertension** (≥140/90 mmHg) from everyday health information, trained on **68,584 real patient records**, with an interactive web app.
 
 ![App screenshot](reports/figures/app_screenshot.png)
