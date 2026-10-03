@@ -16,7 +16,7 @@ ROOT = Path(__file__).parent
 MODELS = ROOT / "models"
 FIGS = ROOT / "reports" / "figures"
 
-st.set_page_config(page_title="Blood Pressure Predictor", page_icon="🩺", layout="wide")
+st.set_page_config(page_title="Blood Pressure Predictor", layout="wide")
 
 
 @st.cache_resource
@@ -33,7 +33,7 @@ best_reg = next(r for r in metrics["regression"]["results"]
 best_clf = next(r for r in metrics["classification"]["results"]
                 if r["model"] == metrics["classification"]["best_model"])
 
-st.title("🩺 Blood Pressure Predictor")
+st.title("Blood Pressure Predictor")
 st.caption(
     f"Gradient-boosted models trained on {metrics['dataset']['rows_clean']:,} patient records. "
     "Educational project, not medical advice."
