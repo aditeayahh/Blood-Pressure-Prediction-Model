@@ -1,0 +1,101 @@
+{
+  "dataset": {
+    "rows_raw": 70000,
+    "rows_clean": 68584,
+    "removed": {
+      "duplicate rows": 24,
+      "height outside 120-220": 53,
+      "weight outside 30-200": 7,
+      "ap_hi outside 80-240": 245,
+      "ap_lo outside 40-160": 1005,
+      "diastolic >= systolic": 82
+    },
+    "hypertension_rate": 0.343
+  },
+  "regression": {
+    "best_model": "Gradient boosting",
+    "results": [
+      {
+        "model": "Baseline (mean)",
+        "cv_mae": 12.9382,
+        "cv_mae_std": 0.11,
+        "test_mae": 12.9547,
+        "test_rmse": 16.6187,
+        "test_r2": -0.0
+      },
+      {
+        "model": "Linear regression",
+        "cv_mae": 11.5431,
+        "cv_mae_std": 0.1173,
+        "test_mae": 11.5327,
+        "test_rmse": 15.4347,
+        "test_r2": 0.1374
+      },
+      {
+        "model": "Random forest",
+        "cv_mae": 11.6013,
+        "cv_mae_std": 0.1267,
+        "test_mae": 11.6054,
+        "test_rmse": 15.5242,
+        "test_r2": 0.1274
+      },
+      {
+        "model": "Gradient boosting",
+        "cv_mae": 11.5054,
+        "cv_mae_std": 0.1323,
+        "test_mae": 11.5145,
+        "test_rmse": 15.397,
+        "test_r2": 0.1416
+      }
+    ]
+  },
+  "classification": {
+    "best_model": "Gradient boosting",
+    "results": [
+      {
+        "model": "Baseline (majority)",
+        "cv_auc": 0.5,
+        "cv_auc_std": 0.0,
+        "test_auc": 0.5,
+        "test_accuracy": 0.657,
+        "test_f1": 0.0
+      },
+      {
+        "model": "Logistic regression",
+        "cv_auc": 0.6951,
+        "cv_auc_std": 0.0064,
+        "test_auc": 0.6941,
+        "test_accuracy": 0.6852,
+        "test_f1": 0.3717
+      },
+      {
+        "model": "Random forest",
+        "cv_auc": 0.6962,
+        "cv_auc_std": 0.006,
+        "test_auc": 0.6939,
+        "test_accuracy": 0.6875,
+        "test_f1": 0.4202
+      },
+      {
+        "model": "Gradient boosting",
+        "cv_auc": 0.6989,
+        "cv_auc_std": 0.0065,
+        "test_auc": 0.6971,
+        "test_accuracy": 0.6875,
+        "test_f1": 0.4192
+      }
+    ]
+  },
+  "feature_importance": {
+    "BMI": 0.0603,
+    "Cholesterol level": 0.049,
+    "Age": 0.0312,
+    "Weight": 0.0119,
+    "Sex (male)": 0.0041,
+    "Glucose level": 0.0032,
+    "Height": 0.0015,
+    "Physically active": 0.0001,
+    "Drinks alcohol": -0.0003,
+    "Smoker": -0.0004
+  }
+}

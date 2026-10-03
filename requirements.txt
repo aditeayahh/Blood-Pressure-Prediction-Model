@@ -1,5 +1,8 @@
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
+# scikit-learn is pinned because the saved models must load with the version that trained them
+scikit-learn==1.9.1
+pandas>=2.2
+numpy>=2.0
+joblib>=1.4
+matplotlib>=3.8
+seaborn>=0.13
+streamlit>=1.40
