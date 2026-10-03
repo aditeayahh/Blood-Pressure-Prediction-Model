@@ -16,12 +16,12 @@ Hypertension affects over a billion people and often has no symptoms until it ca
 
 ## Highlights
 
-- 🧹 **Data cleaning** of a messy real-world dataset: removed 1,416 impossible records (e.g. blood pressure of −150 or 16,020 mmHg), with every rule logged
-- 🧪 **Two models:** regression (predict the systolic number) and classification (predict hypertension)
-- ⚖️ **Fair model comparison:** 4 approaches each, 5-fold cross-validation, judged against a "dumb" baseline
-- 🔍 **Explainability:** permutation importance shows what actually drives risk
-- 🌐 **Web app** with "what if?" scenarios
-- ✅ **Automated tests** run on every push with GitHub Actions
+- **Data cleaning** of a messy real-world dataset: removed 1,416 impossible records (e.g. blood pressure of −150 or 16,020 mmHg), with every rule logged
+- **Two models:** regression (predict the systolic number) and classification (predict hypertension)
+- **Fair model comparison:** 4 approaches each, 5-fold cross-validation, judged against a "dumb" baseline
+- **Explainability:** permutation importance shows what actually drives risk
+- **Web app** with "what if?" scenarios
+- **Automated tests** run on every push with GitHub Actions
 
 ## Results
 
@@ -41,7 +41,7 @@ Hypertension affects over a billion people and often has no symptoms until it ca
 | Baseline (predict the average) | 12.9 mmHg | 0.00 |
 | Linear regression | 11.5 mmHg | 0.14 |
 | Random forest | 11.6 mmHg | 0.13 |
-| **Gradient boosting** ⭐ | **11.5 mmHg** | **0.14** |
+| **Gradient boosting**  | **11.5 mmHg** | **0.14** |
 
 ![Model comparison](reports/figures/model_comparison.png)
 
@@ -97,4 +97,4 @@ python -m bp_model.train      # retrain (needs the dataset, see data/README.md)
 
 ---
 
-⚠️ *Educational project. Not medical advice. Please measure your blood pressure and talk to a doctor.*
+ *Educational project. Not medical advice. Please measure your blood pressure and talk to a doctor.*
